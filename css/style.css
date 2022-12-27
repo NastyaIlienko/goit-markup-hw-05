@@ -59,12 +59,7 @@ h1,h2,h3,h4,h5,h6,p,ul
     
 }
 
-.header 
-{
-    border-bottom: 2px solid var(--color-grey);
 
-  
-}
 
 .logo-nav 
 {
@@ -107,19 +102,6 @@ h1,h2,h3,h4,h5,h6,p,ul
     background-color:#404BBF;
     opacity: 1;
 }
-
-
-.link-underline:hover::after
-{
-   position: absolute;
-   display: block;
-   left: 0;
-   bottom: 0;
-   opacity: 0;
-   
-}
-
-
 
 .image-list, 
 .image-team-list,
@@ -181,6 +163,15 @@ body
  .item 
 {
     flex-basis:  calc((100% - 72px) / 4);
+}
+
+.header
+{
+    margin: 0 auto;
+    
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-link
@@ -279,8 +270,10 @@ box-shadow var(--anim-fast);
     color: var(--color-btn);  
     cursor: pointer;
 
-    transition: color var(--anim-fast),backround-color var(--anim-fast),
-    box-shadow var(--anim-fast);
+    transition: color var(--anim-fast),
+    background-color var(--anim-fast), box-shadow var(--anim-slow);
+    
+ 
        
 }
 
